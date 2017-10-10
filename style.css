@@ -3,3 +3,24 @@ body {
   height: 100%;
   display: flex;
 }
+
+.logo {
+  width: 15%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+text-decoration: none;
+}
+li {
+color: black;
+flex-direction: row;
+
+}
+ .active {
+   color: red;
+ }
