@@ -27,7 +27,7 @@ flex-direction: row;
 
 }
 
-.firstpage {
+.quote {
   background-color: black;
   display: flex;
   justify-content: center;
@@ -43,6 +43,11 @@ h1 {
   font-weight: 900;
   line-height: 33px;
   text-transform: uppercase;
+
+}
+
+.firstpage {
+  background-image: url() center cover;
 
 }
 
