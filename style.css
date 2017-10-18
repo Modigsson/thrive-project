@@ -192,3 +192,8 @@ a:hover
   font-size: 200%;
   font-weight: 900;
 }
+
+p {
+  line-height: 1.5;
+  font-size: 160%;
+}
