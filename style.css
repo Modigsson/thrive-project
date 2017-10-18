@@ -170,10 +170,11 @@ a:hover
   width: 100vw;
   display: flex;
   height: 45%;
+  margin-bottom: 60px;
 }
 
 .Rectangle {
-  width: 60%;
+  width: 55%;
   background-color: rgba(255,255,255,0.65);
   margin-bottom: 60px;
 }
@@ -182,7 +183,12 @@ a:hover
     margin-bottom: 60px;
     width: 0;
     height: 0;
-    border-top: 205px solid transparent;
-    border-bottom: 205px solid transparent;
-    border-left: 100px solid rgba(255,255,255,0.65);
+    border-top: 225px solid transparent;
+    border-bottom: 225px solid transparent;
+    border-left: 105px solid rgba(255,255,255,0.65);
+}
+
+.text {
+  font-size: 200%;
+  font-weight: 900;
 }
