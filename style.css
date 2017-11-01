@@ -12,37 +12,40 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /*box-shadow: 0 4px 2px -2px black;*/
 }
+
 .logo {
   width: 40%;
-
 }
 
 .header {
   height: 20vh;
   width: 100vw;
+
 }
 .mainpage {
-
+  position: absolute;
   background-image: url("images/thrive_mobil_element/startsida.png");
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
-.consiusbox {
-  width: 84%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.conciousBox {
+  position: relative;
   background-color: black;
+  top: 93.86666666666666vw;
+  width: 84vw;
+  height: 18.666666666666668vw;
+  margin-left: 8vw;
+  display: flex;
+  justify-content: center;
 }
+
 h1 {
-  margin: 0;
-  padding: 0;
-  font-size:28px;
   color: white;
+  font-size: 7.466666666666667vw;
+  font-family: Didot, serif;
+  font-style: italic;
 }
