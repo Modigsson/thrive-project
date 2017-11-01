@@ -1,6 +1,15 @@
 #wrapper {
   background-color: black;
 }
+
+.header {
+  height: 20vh;
+  width: 100vw;
+}
 .mainpage {
   background-image: url("images/thrive_mobil_element/startsida.png");
+  height: 80vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
