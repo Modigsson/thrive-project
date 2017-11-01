@@ -1,89 +1,114 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet"  type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-<link rel="stylesheet" href="jquery-3.2.1.min.js">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
-<script type="text/javascript" src="jquery.fullPage.min.js"></script>
-    <meta charset="utf-8">
-    <title>T H R I V E</title>
-  </head>
-  <body>
-
+<head>
+  <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" /> -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <!-- <script src="vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./jquery.fullPage.js"></script>
+    <link rel="stylesheet" href="./jquery.fullPage.css"/>
+    </script>
+<title>T H R I V E</title>
+</head>
+<body>
 <div id="fullpage">
-<!--Page 1  -->
-  <div class="section">
-    <div class="header">
-      <img class="logo" src="images/thrivelogo.png" >
-    </div>
-    <div class="mainpage">
-      <div class="consiusbox">
-        <h1>consious?</h1>
-      <div class="conciousBox">
-        <h1>CONCIOUS?</h1>
+  <!--Page 1  -->
+  <section class="vertical-scrolling mainpage">
+    <header>
+      <div class="header-top">
+        <img class="logo" src="images/thrivelogo.png" alt="">
       </div>
-      <div class="arrowBox">
-        <img class="arrow" src="images/pil.svg">
-      </div>
+    </header>
+    <h2>Consious?</h2>
+    <img class="arrow" src="images/pil.svg" alt="">
+    <div class="scroll-icon">
+      <p>Jump into the last slide</p>
+      <a href="#fifthSection/1" class="icon-up-open-big"></a>
     </div>
-  </div>
-
+  </section>
   <!--Page 2  -->
-  <div class="section">
-    <div class="fastFashion">
-      <img class="logo" src="images/thrive_mobile_element/rubrik_fuck_fast_fashion.png" >
-    </div>
-
-
-
-
-  </div>
-<!--Page 3  -->
-<div class="section"></div>
+  <section class="vertical-scrolling">
+    <h2>fullPage.js</h2>
+    <h3>This is the second section</h3>
+  </section>
+  <!--Page 3  -->
+  <section class="vertical-scrolling">
+    <h2>fullPage.js</h2>
+    <h3>This is the third section</h3>
+  </section>
   <!--Page 4  -->
-  <div class="section"></div>
+  <section class="vertical-scrolling">
+    <div class="headerFour">
+      <img class="PETA" src=".\images\thrive_mobil_element\rubrik_PETA.png">
+    </div>
+    <h3>This is the fourth section</h3>
+  </section>
   <!--Page 5  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <section class="vertical-scrolling">
+    <div class="horizontal-scrolling">
+      <h2>fullPage.js</h2>
+      <h3>This is the fifth section and it contains the first slide (actually section == first slide)</h3>
+    </div>
+    <div class="horizontal-scrolling">
+      <h2>fullPage.js</h2>
+      <h3>This is the second slide</h3>
+      <p class="end">Thank you!</p>
+    </div>
+  </section>
 </div>
-
-
-
-
-<script type="text/javascript">
-$(document).ready(function() {
-  $('#wrapper').fullpage(
-    {
-      slidesNavigation: true,
-      navigation: true,
-      controlArrows: false,
-      autoScrolling: false,
-      fitToSection: false,
-
-   }
-
- );
+</body>
+<script>
+// variables
+var $header_top = $('.header-top');
+var $nav = $('nav');
+// fullpage customization
+$('#fullpage').fullpage({
+sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F'],
+sectionSelector: '.vertical-scrolling',
+slideSelector: '.horizontal-scrolling',
+navigation: true,
+slidesNavigation: true,
+controlArrows: false,
+anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
+menu: '#menu',
+afterLoad: function(anchorLink, index) {
+  $header_top.css('background', 'rgba(0, 47, 77, .3)');
+  $nav.css('background', 'rgba(0, 47, 77, .25)');
+  if (index == 5) {
+      $('#fp-nav').hide();
+    }
+},
+onLeave: function(index, nextIndex, direction) {
+  if(index == 5) {
+    $('#fp-nav').show();
+  }
+},
+afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
+  if(anchorLink == 'fifthSection' && slideIndex == 1) {
+    $.fn.fullpage.setAllowScrolling(false, 'up');
+    $header_top.css('background', 'transparent');
+    $nav.css('background', 'transparent');
+    $(this).css('background', '#374140');
+    $(this).find('h2').css('color', 'white');
+    $(this).find('h3').css('color', 'white');
+    $(this).find('p').css(
+      {
+        'color': '#DC3522',
+        'opacity': 1,
+        'transform': 'translateY(0)'
+      }
+    );
+  }
+},
+onSlideLeave: function( anchorLink, index, slideIndex, direction) {
+  if(anchorLink == 'fifthSection' && slideIndex == 1) {
+    $.fn.fullpage.setAllowScrolling(true, 'up');
+    $header_top.css('background', 'rgba(0, 47, 77, .3)');
+    $nav.css('background', 'rgba(0, 47, 77, .25)');
+  }
+}
 });
 </script>
-  </body>
 </html>
