@@ -1,13 +1,14 @@
 *{
   box-sizing: border-box;
 }
-#wrapper {
+/*#wrapper {
   width: 100vw;
   padding: 0;
-  margin: 0;
-}
+  margin: 0;*/
+
 .header {
-  height: 12vh;
+  height: 21.333333333333332vh;
+  width: 100vw;
   background-color: black;
   display: flex;
   align-items: center;
@@ -16,13 +17,9 @@
 
 .logo {
   width: 40%;
+  height: 21.333333333333332vw
 }
 
-.header {
-  height: 20vh;
-  width: 100vw;
-
-}
 .mainpage {
   position: absolute;
   background-image: url("images/thrive_mobil_element/startsida.png");
@@ -48,4 +45,19 @@ h1 {
   font-size: 7.466666666666667vw;
   font-family: Didot, serif;
   font-style: italic;
+}
+
+.arrowBox {
+  justify-content: center;
+  display: flex;
+}
+
+.arrow {
+  margin-top: 55.4vh;
+  width: 17.333333333333332vw;
+}
+
+.fastFasion {
+  height: 20vh;
+  width: 100vw;
 }
