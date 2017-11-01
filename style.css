@@ -122,14 +122,6 @@ a {
 
 
 .header-top {
-<<<<<<< HEAD
-  background-color: black!important;
-  width: 100vw;
-
-}
-
-.logo {
-=======
 	background-color: black!important;
 
   /*padding: 0 10px;*/
@@ -143,7 +135,6 @@ a {
 }
 .logo{
   width: 30%;
->>>>>>> 81f32f32b148aa80eaf9b944fd6a5dde01a7945a
   background-color: black;
   width: 75vw;
 }
