@@ -25,33 +25,28 @@ body {
 .logo {
   width: 35%;
 }
-.mainpage {
-  width: 100%;
-  height: 400px;
-}
 
-.box {
-  background-image: url("images/test.jpg");
-  background-position: center;
+.firstPage {
+  display: flex;
+  background-image: url("images/thrive_mobil_element/startsida.png");
+  width: 100vw;
+  height: 100vh;
   background-size: cover;
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
-  background-repeat: repeat;
-  /*bor4der: 10px solid black;*/
-
-  background-color: tomato;
+  background-repeat: no-repeat;
 }
 
-.fuck {
+.conciousBox {
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-}
-.pil{
-  width: 20%;
-  align-items: center;
+  width: 85%;
+  height: 10%;
+  align-items: flex-end;
   justify-content: center;
-  display: flex;
-  justify-content: flex-end;
+  background-color: black;
 }
+
+/*.conciousBox {
+  background-color: black;
+  width: 84%;
+  height: 10%;
+  margin-top: 95%;
+}*/
