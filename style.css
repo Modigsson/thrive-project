@@ -124,7 +124,14 @@ ul, li {
 }
 
 .header-top {
+  background-color: black!important;
+  width: 100vw;
+
+}
+
+.logo {
   background-color: black;
+  width: 75vw;
 }
 
 
