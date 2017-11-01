@@ -132,6 +132,7 @@ a {
   width: 55%;
   height: 7vh;
   background-color: black;
+<<<<<<< HEAD
   padding: 4vh;
 }
 
@@ -145,6 +146,9 @@ a {
   justify-content: center;
   background-color: black;
 
+=======
+  width: 75vw;
+>>>>>>> ca19195e2307d83972f159dab930550c46a91d4b
 }
 
 .rubrik {
