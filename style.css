@@ -131,11 +131,20 @@ height: 50vh !important;
   justify-content: center;
 }
 
-
 .PETA {
   width: 100vw;
   height: 10vh;
 }
+
+.fadedShirt {
+  height: 80vh;
+  width: 100vw;
+}
+
+.shirtFade {
+  content: url("./images/mobil_fade_bilder/shirt_mobile_fade.png");
+}
+
 
 /* SECTION STYLES - fullPage.js
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
