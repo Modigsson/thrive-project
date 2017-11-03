@@ -134,16 +134,66 @@ height: 50vh !important;
 .PETA {
   width: 100vw;
   height: 10vh;
+  position: fixed;
+  background-color: black;
 }
 
-.fadedShirt {
-  height: 80vh;
-  width: 100vw;
-}
 
 .shirtFade {
-  content: url("./images/mobil_fade_bilder/shirt_mobile_fade.png");
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
+
+
+.shirtFade img {
+  height: 100vh;
+  width: 100vw;
+  position:absolute;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+
+#topPic {
+  animation-name: fade;
+  left: 0;
+}
+#bottomPic {
+  /*animation-name: fade2;*/
+  left: 0;
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: 1;}
+  10% {opacity: 0.8;}
+  20% {opacity: 0.6;}
+  30% {opacity: 0.4;}
+  40% {opacity: 0.2;}
+  50% {opacity: 0;}
+  60% {opacity: 0.2;}
+  70% {opacity: 0.4;}
+  80% {opacity: 0.6;}
+  90% {opacity: 0.8;}
+  100% {opacity: 1;}
+}
+
+
+@keyframes fade {
+  0% {opacity: 1;}
+  10% {opacity: 0.8;}
+  20% {opacity: 0.6;}
+  30% {opacity: 0.4;}
+  40% {opacity: 0.2;}
+  50% {opacity: 0;}
+  60% {opacity: 0.2;}
+  70% {opacity: 0.4;}
+  80% {opacity: 0.6;}
+  90% {opacity: 0.8;}
+  100% {opacity: 1;}
+}
+
 
 
 /* SECTION STYLES - fullPage.js
