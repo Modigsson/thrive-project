@@ -134,7 +134,7 @@ height: 50vh !important;
 .PETA {
   width: 100vw;
   height: 10vh;
-  position: fixed;
+  position: absolute;
   background-color: black;
 }
 
@@ -151,47 +151,35 @@ height: 50vh !important;
   width: 100vw;
   position:absolute;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 10s;
+  -webkit-animation-duration: 8s;
   animation-iteration-count: infinite;
-  animation-duration: 10s;
+  animation-duration: 8s;
 }
 
 #topPic {
   animation-name: fade;
   left: 0;
+  animation-delay: 4s;
 }
 #bottomPic {
-  /*animation-name: fade2;*/
   left: 0;
 }
 
-@-webkit-keyframes fade {
-  0% {opacity: 1;}
-  10% {opacity: 0.8;}
-  20% {opacity: 0.6;}
-  30% {opacity: 0.4;}
-  40% {opacity: 0.2;}
-  50% {opacity: 0;}
-  60% {opacity: 0.2;}
-  70% {opacity: 0.4;}
-  80% {opacity: 0.6;}
-  90% {opacity: 0.8;}
-  100% {opacity: 1;}
-}
+/*@-webkit-keyframes fade {
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  33% {opacity: 1;}
+  53% {opacity: 0;}
+  100% {opacity: 0;}
+}*/
 
 
 @keyframes fade {
-  0% {opacity: 1;}
-  10% {opacity: 0.8;}
-  20% {opacity: 0.6;}
-  30% {opacity: 0.4;}
-  40% {opacity: 0.2;}
-  50% {opacity: 0;}
-  60% {opacity: 0.2;}
-  70% {opacity: 0.4;}
-  80% {opacity: 0.6;}
-  90% {opacity: 0.8;}
-  100% {opacity: 1;}
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  33% {opacity: 1;}
+  53% {opacity: 0;}
+  100% {opacity: 0;}
 }
 
 
