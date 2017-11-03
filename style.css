@@ -96,7 +96,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Alegreya Sans', Arial, sans-serif;
-	text-transform: uppercase;
+
 
 }
 
@@ -129,10 +129,9 @@ a {
   justify-content: center;
 }
 .logo{
-  width: 55%;
+  width: 370px;
   height: 7vh;
   background-color: black;
-<<<<<<< HEAD
   padding: 4vh;
 }
 
@@ -146,9 +145,6 @@ a {
   justify-content: center;
   background-color: black;
 
-=======
-  width: 75vw;
->>>>>>> ca19195e2307d83972f159dab930550c46a91d4b
 }
 
 .rubrik {
@@ -163,8 +159,44 @@ a {
   background-size: cover;
 
 }
+.Event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  /*opacity: 0;
+  transition: opacity 0.5s linear 0s;
+  visibility: hidden;*/
+  position: absolute;
+  top: 60vh;
+  left: 8vh;
+  color: white;
+  font-size: 4em;
+  background-color: black;
+  padding: 3vh;
+  text-align: left;
+  height: 30vh;
+  width: 70%;
+  display: block;
+  visibility: visible;
 
 
+}
+
+.plus {
+  visibility: hidden;
+  width: 25%;
+  height: 10vh;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+}
+
+/*.plus:hover + .hidden{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}*/
 .arrow {
   width: 25%;
   height: 4vh;
@@ -183,6 +215,9 @@ section {
 }
 .Main {
   background-color: black!important;
+  background-image: url("images/thrive_mobil_element/concret_wall.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .fastF {
 /*background-image: url("images/thrive_mobil_element/fuck_fashion_bild.png");
@@ -209,37 +244,61 @@ h2 {
 	/*margin-bottom: 20px;*/
 }
 
+b {
+  font-size: 120%;
+}
+
 h3 {
 	font-weight: 300;
 	font-size: 2.8em;
 }
+.backhead {
+/*width: 100%;*/
+height: 7vh;
+background-color: black;
+}
+.backtips {
+width: 100vw;
+height: 100vh;
+}
 
-
-
+.store {
+  width: 90%;
+  height: 12vh;
+  margin: 0 auto;
+  margin-top: 65vh;
+}
 /* SLIDENAV STYLES - fullPage.js
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
 	background: white;
-	width: 8px;
-	height: 8px;
+	width: 30px!important;
+	height: 30px!important;
 	margin: -4px 0 0 -4px;
+  border: 3px solid black!important;
+}
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+	width: 30px!important;
+	height: 30px!important;
 }
 
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {
-	width: 16px;
-	height: 16px;
+	width: 30px!important;
+	height: 30px!important;
 	margin: -8px 0 0 -8px;
-	background: transparent;
+	background: black;
 	box-sizing: border-box;
-	border: 1px solid #24221F;
+	border: 3px solid black;
 }
 
-
+//#24221F
 
 /* MQ STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -249,8 +308,6 @@ h3 {
   .logo {
     width: 50%;
   }
-
-
 
   .scroll-icon {
     display: none;
@@ -265,6 +322,42 @@ h3 {
   .logo {
     width: 150%;
   }
+}
 
+
+
+@media screen and (max-width: 800px) {
+
+  .hidden {
+    opacity: 0;
+    transition: opacity 0.5s linear 0s;
+    visibility: hidden;
+    position: absolute;
+    top: 40vh;
+    left: 8vh;
+    color: white;
+    font-size: 4em;
+    background-color: black;
+    padding: 3vh;
+    text-align: left;
+    height: 30vh;
+    width: 70%;
+
+
+  }
+  .plus {
+    visibility: visible;
+    display: block;
+    width: 25%;
+    height: 10vh;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+  }
+
+  .plus:hover + .hidden{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
 
 }
