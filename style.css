@@ -114,9 +114,9 @@ position: absolute;
 }
 .mainpage {
 height: 50vh !important;
-  background-image: url("images/thrive_mobil_element/startsida.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+background-image: url("images/thrive_mobil_element/startsida.png");
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .fourthPage  {
