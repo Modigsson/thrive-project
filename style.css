@@ -181,8 +181,6 @@ a {
   display: block;
   visibility: visible;
   margin: 0 auto;
-
-
 }*/
 
 .plus {
@@ -329,7 +327,6 @@ height: 100vh;
 
 
 /*@media screen and (max-width: 800px) {
-
   .hidden {
     opacity: 0;
     transition: opacity 0.5s linear 0s;
@@ -344,8 +341,6 @@ height: 100vh;
     text-align: left;
     height: 30vh;
     width: 70%;
-
-
   }
   .plus {
     visibility: visible;
@@ -355,11 +350,9 @@ height: 100vh;
     margin: 0 auto;
     margin-bottom: 5vh;
   }
-
   .plus:hover + .hidden{
     display: block;
     opacity: 1;
     visibility: visible;
   }
-
 }*/
